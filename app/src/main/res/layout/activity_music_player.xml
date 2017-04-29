@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EF9A9A"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/homeButton"
+                style="@style/upperSelection"
+                android:text="@string/home" />
+
+            <TextView
+                android:id="@+id/info2"
+                style="@style/upperSelection"
+                android:text="@string/info" />
+
+            <TextView
+                android:id="@+id/songlistButton"
+                style="@style/upperSelection"
+                android:text="@string/list" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/upperText"
+            android:text="@string/musicPlayerMain" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded2"
+            android:text="@string/theOne"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imagePlayer"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/songName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/musicButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/imagePlayer"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/playbutton" />
+
+        <SeekBar
+            android:id="@+id/playerSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/musicButton"
+            android:background="@drawable/rounded2"
+            android:max="100"
+            android:progress="0"
+
+
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

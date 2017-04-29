@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lukas Music Helper</string>
+    <string name="hello">Lukas Music Helper</string>
+    <string name="musicPlayerMain">Music Player</string>
+    <string name="songsList">Songs List</string>
+    <string name="coldplay">The Chainsmokers &amp; Coldplay - Something Just Like This</string>
+    <string name="theOne">Chainsmokers - The One</string>
+    <string name="edShreeran">Ed Sheeran - Shape of You</string>
+    <string name="unforgettable">French Montana - Unforgettable ft. Swae Lee</string>
+    <string name="lostYou">"Lost You (feat. Twin Shadow &amp; D'Angelo Lacy)" | Zeds Dead</string>
+    <string name="home">Home</string>
+    <string name="tracksong">Track Song</string>
+    <string name="info">info</string>
+    <string name="list">list</string>
+    <string name="trackActivity">This is activity for tracking the name of song you heard !!</string>
+    <string name="musicActivity">This is activity for listening to the music. Songs pictures and namings changes by what you select in listing !!</string>
+    <string name="ListActivity">This is activity for choosing the track you want to listen in music player !!</string>
+</resources>

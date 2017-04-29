@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicapp.TrackTheSong"
+    android:orientation="vertical"
+    android:background="@color/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EF9A9A"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/homeButton3"
+                style="@style/upperSelection"
+                android:text="@string/home"
+                />
+
+            <TextView
+                android:id="@+id/info"
+                android:text="@string/info"
+                style="@style/upperSelection"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/tracksong"
+            style="@style/upperText"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/microphone"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:paddingTop="60dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/micro3"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/listen"
+            android:layout_below="@id/microphone"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

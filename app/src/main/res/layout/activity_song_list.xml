@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicapp.songList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EF9A9A"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/homeButton2"
+                style="@style/upperSelection"
+                android:text="@string/home" />
+
+            <TextView
+                android:id="@+id/info3"
+                style="@style/upperSelection"
+                android:text="@string/info" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/upperText"
+            android:text="@string/songsList" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/toYouSelect"
+                style="@style/listLayout"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    style="@style/listImage"
+                    android:src="@drawable/theone" />
+
+                <TextView
+                    style="@style/listItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/theOne"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/coldlaySelect"
+                style="@style/listLayout">
+
+                <ImageView
+                    style="@style/listImage"
+                    android:src="@drawable/chainsmokerscoldplay" />
+
+                <TextView
+                    style="@style/listItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/coldplay"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edsheeranSelect"
+                style="@style/listLayout">
+
+                <ImageView
+                    style="@style/listImage"
+                    android:src="@drawable/shapeof" />
+
+                <TextView
+                    style="@style/listItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/edShreeran"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/unforgettableSelect"
+                style="@style/listLayout">
+
+                <ImageView
+                    style="@style/listImage"
+                    android:src="@drawable/unforgettable" />
+
+                <TextView
+                    style="@style/listItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/unforgettable"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lostyouSelect"
+                style="@style/listLayout">
+
+                <ImageView
+                    style="@style/listImage"
+                    android:src="@drawable/lostyou" />
+
+                <TextView
+                    style="@style/listItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/lostYou"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
