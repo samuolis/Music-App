@@ -20,6 +20,7 @@ import static com.example.android.musicapp.songList.unforgettableboolean;
 
 
 public class MusicPlayer extends AppCompatActivity {
+    //declaring variables in global that i could use in diferent functions
     public TextView title;
     public ImageView image;
     public TextView infoText2;
@@ -29,9 +30,12 @@ public class MusicPlayer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_player);
+        //finfing views for variables
         title = (TextView) findViewById(R.id.songName);
         image = (ImageView) findViewById(R.id.imagePlayer);
         image.setImageResource(R.drawable.theone);
+
+        //this if makes your selection in player, that song you choose in list shows up in player
 
         if (coldplayboolean) {
             title.setText(R.string.coldplay);
@@ -57,9 +61,9 @@ public class MusicPlayer extends AppCompatActivity {
             image.setImageResource(R.drawable.lostyou);
         }
 
-        if (!theoneboolean && !edboolean && !lostyouboolean && !unforgettableboolean && !coldplayboolean) {
-            lostyouboolean = true;
-        }
+
+
+        //this buttons are for traveling around my activities
 
         TextView Home2 = (TextView) findViewById(R.id.homeButton);
         Home2.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +85,7 @@ public class MusicPlayer extends AppCompatActivity {
 
         });
 
+        //this is alertbox for information about current activity when you hit info
 
         infoText2 = (TextView) findViewById(R.id.info2);
         infoText2.setOnClickListener(new View.OnClickListener() {

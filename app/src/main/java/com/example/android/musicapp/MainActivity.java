@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //this is my code for opening song list by clicking textview
 
         TextView songList = (TextView) findViewById(R.id.mainButton2);
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //this is my code for opening music player by clicking textview
+
         TextView musicPlayer = (TextView) findViewById(R.id.mainButton1);
 
         musicPlayer.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(musicIntent);
             }
         });
+
+        //this is my code for opening track song by clicking textview
 
         TextView trackSong = (TextView) findViewById(R.id.mainButton3);
 

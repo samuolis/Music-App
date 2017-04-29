@@ -28,6 +28,8 @@ public class songList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song_list);
 
+        //this opens music player from song list, there are many booleans, that when you choose one song, that it will open even from home
+
         LinearLayout toYou = (LinearLayout) findViewById(R.id.toYouSelect);
         toYou.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,6 +109,8 @@ public class songList extends AppCompatActivity {
             }
         });
 
+        //this button moves you to home
+
         TextView Home = (TextView) findViewById(R.id.homeButton2);
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,6 +120,8 @@ public class songList extends AppCompatActivity {
             }
 
         });
+
+        //this is info alert about list, when you click info
 
         infoText = (TextView) findViewById(R.id.info3);
         infoText.setOnClickListener(new View.OnClickListener() {

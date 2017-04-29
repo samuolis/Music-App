@@ -19,6 +19,7 @@ public class TrackTheSong extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_the_song);
 
+        //this is code to move you home
 
         TextView Home3 = (TextView) findViewById(R.id.homeButton3);
         Home3.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +30,8 @@ public class TrackTheSong extends AppCompatActivity {
             }
 
         });
+        
+        //this is code for alert, when you click info button
 
         infoText = (TextView) findViewById(R.id.info);
         infoText.setOnClickListener(new View.OnClickListener() {
